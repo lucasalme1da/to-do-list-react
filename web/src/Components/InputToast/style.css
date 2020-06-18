@@ -1,0 +1,75 @@
+
+* {
+  font-family: 'Josefin Sans';
+  padding: 0;
+  margin: 0;
+}
+
+.inputToastOuter {
+  /* background-color: #FFB95A; */
+  background-color: lightgray;
+  position: absolute;
+  width: 406px;
+  height: 37px;
+  padding: 13px 0px 12px 3px;
+  /* border: 1.5px solid #3F3D56; */
+  clip-path: polygon(0.5% 16%, 15.5% 16%, 17.6% 3%, 19.6% 16%, 100% 16%, 110% 110%, 0.5% 110%);
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+.inputToastInner {
+  /* background-color: #FFB95A; */
+  background-color: white;
+  position: absolute;
+  width: 395px;
+  height: 36px;
+  padding: 15px 0px 8px 10px;
+  /* border: 1.5px solid #3F3D56; */
+  clip-path: polygon(0 15%, 15% 15%, 17% 2%, 19% 15%, 100% 15%, 100% 100%, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.warningContainer {
+  width: 360px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.inputToastInner button {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: unset;
+  justify-self: flex-end;
+  cursor: pointer;
+}
+
+
+.warning {
+  width: 30px;
+  height: 28px;
+  background-color: #FFB95A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  font-size: 26px;
+  color: white;
+}
+
+.inputToastInner p {
+  color: #3F3D56;
+  margin-left: 10px;
+} 

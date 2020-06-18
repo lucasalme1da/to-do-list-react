@@ -1,0 +1,158 @@
+:root{
+  --header: #3F3D56;
+  --almost-black: rgb(35, 34, 47);
+  --background: #f5f5f5;
+
+  --dark-grey-color: #333333;
+	--lightdark-grey-color: #424242;
+	--darklight-grey-color: #969696;
+	--light-grey-color: #e7e7e7;
+	--grey-color: #f2efff;
+
+	--done-green-color: #27ae60;
+	--light-done-green-color: #2dc76d;
+	--verylight-done-green-color: #39eb83;
+
+	--delete-red-color: #eb5757;
+	--light-delete-red-color: #eb5e5e;
+	--verylight-delete-red-color: #ff6b6b;
+
+	--selection: rgb(66, 66, 66, 0.7)
+}
+
+.task {
+	width: 330px;
+	height: 112px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	transition: 0.2s;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+	cursor: grab;
+}
+
+.task:hover {
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.selectedTask {
+	opacity: 0.4;
+}
+
+.task header {
+	width: 316px;
+	height: 20px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: unset;
+}
+
+.task header div {
+	width: 14px;
+	height: 14px;
+	background-color: var(--almost-black);
+}
+
+.task header p {	
+	cursor: default;
+	font-size: 20px;
+  color: var(--almost-black);
+}
+
+.task .content {
+	width: 302px;
+	height: 50px;
+	overflow-y: hidden;
+	display: flex;
+	align-items: flex-start;
+}
+
+.task .content p {	
+	font-size: 24px;
+  cursor: grab;
+  color: var(--almost-black);
+}
+
+.task .submit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.doneButton {
+  height: 28px;
+  width: 80px;
+	align-self: flex-end;
+  background-color: var(--done-green-color);
+  color: white;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  cursor: pointer;
+  padding-top: 6px;
+  outline: 0;
+  border: 0;
+  transition: 0.2s;
+}
+
+.doneButton:hover {
+  background-color: var(--light-done-green-color);
+}
+
+.doneButton:active {
+	background-color: var(--verylight-done-green-color);
+  
+}
+
+
+.doneButton p {
+	margin-bottom: -5px;
+	color: white;
+}
+
+.deleteButton {
+  height: 28px;
+  width: 80px;
+	align-self: flex-end;
+  background-color: var(--delete-red-color);
+  color: white;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  cursor: pointer;
+  padding-top: 6px;
+  outline: 0;
+  border: 0;
+  transition: 0.2s;
+}
+
+.deleteButton:hover {
+  background-color: var(--light-delete-red-color);
+}
+
+.deleteButton:active {
+  background-color: var(--verylight-delete-red-color);
+
+}
+
+.doneButton p {
+	margin-bottom: -5px;
+	color: white;
+}
+
+.tbFiller {
+  position:absolute;
+  z-index:5000; 
+  left:0;
+  top:0;
+  width:100%;
+  height:100%; 
+  background-color:transparent;
+  cursor:move;
+}

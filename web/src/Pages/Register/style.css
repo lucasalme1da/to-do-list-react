@@ -1,0 +1,134 @@
+:root {
+  --title: #3F3D56;
+  --hover-title: #555274;
+  --yellow: #FFB95A;
+  --light-yellow: #ffC573;
+  
+	--done-green-color: #27ae60;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container .logo {
+  height: 615px;
+  width: 820px;
+  padding-left: 25px;
+}
+
+.container .register {
+  width: 690px;
+  height: 615px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .register p {
+  font-size: 80px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  color: var(--title);
+}
+
+.container .register form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .register form input {
+  width: 300px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-left: 10px;
+  outline: 0;
+}
+
+.container .register form div {
+  width: 310px;
+  height: 40px;
+  display: flex;
+}
+
+.container .register form div .backButton {
+  width: 90px;
+  height: 40px;
+  background: var(--title);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .register form div .backButton:hover {
+  background: var(--hover-title);
+}
+
+.container .register form div a {
+  text-emphasis: none;
+  text-decoration: none;
+}
+
+.container .register form div p {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.container .register form div .registerButton {
+  width: 210px;
+  height: 40px;
+  background: var(--yellow);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  cursor: pointer;
+}
+
+.container .register form div .registerButton:hover {
+  background: var(--light-yellow);
+}
+
+.container .register .link {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--title);
+  text-decoration: none;
+}
+
+.container .register .link:hover {
+  text-decoration: underline;
+}
+
+.container .register .link:active {
+  color: var(--title);
+}
+
