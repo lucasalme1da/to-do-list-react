@@ -1,6 +1,6 @@
 <div align="center">
   <h1 align="center"> 
-    <img align="center" alt="TO-DO LIST" width="500px" src="web/src/assets/title.png">
+    <img align="center" alt="TO-DO LIST" width="500px" src="web/src/Assets/title.png">
   </h1>
 
 <p>Esse projeto foi desenvolvido originalmente em javascript puro, e então, a fim de estudar melhor a biblioteca ReactJS no front-end e Node.js no back-end (neste caso, usando o MongoDB como banco de dados), decidi replicar a maior parte do <a href="https://github.com/lucasalme1da/to-do-list">projeto original</a>, mas com tais tecnologias.</p>
